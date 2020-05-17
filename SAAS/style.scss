@@ -150,6 +150,7 @@ h1 {
     padding-bottom: 15px;
 
     label {
+      outline: none;
       cursor: pointer;
       position: relative;
       &::after {
