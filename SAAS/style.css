@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+.visually-hidden, input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 51, 59, 0.5)), color-stop(95%, #000000)), url(../img/gora.jpg);
+  background-image: linear-gradient(180deg, rgba(45, 51, 59, 0.5), #000000 95%), url(../img/gora.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-wrapper {
+  margin-top: 100px;
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 1%;
+}
+
+fieldset {
+  border: none;
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+legend {
+  display: table;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.inputs div {
+  position: relative;
+}
+
+input[type="text"],
+[type="email"],
+[type="password"] {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  text-align: center;
+  padding-top: 30px;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+input[type="text"] ~ .focus-border,
+[type="email"] ~ .focus-border,
+[type="password"] ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+[type="email"]::-webkit-input-placeholder,
+[type="password"]::-webkit-input-placeholder {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #bfbfbf;
+}
+
+input[type="text"]:-ms-input-placeholder,
+[type="email"]:-ms-input-placeholder,
+[type="password"]:-ms-input-placeholder {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #bfbfbf;
+}
+
+input[type="text"]::-ms-input-placeholder,
+[type="email"]::-ms-input-placeholder,
+[type="password"]::-ms-input-placeholder {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #bfbfbf;
+}
+
+input[type="text"]::placeholder,
+[type="email"]::placeholder,
+[type="password"]::placeholder {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #bfbfbf;
+}
+
+input[type="text"]:focus::-webkit-input-placeholder,
+[type="email"]:focus::-webkit-input-placeholder,
+[type="password"]:focus::-webkit-input-placeholder {
+  position: relative;
+  color: #545454;
+  font-size: 0.8em;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+input[type="text"]:focus:-ms-input-placeholder,
+[type="email"]:focus:-ms-input-placeholder,
+[type="password"]:focus:-ms-input-placeholder {
+  position: relative;
+  color: #545454;
+  font-size: 0.8em;
+  transform: translateY(-25px);
+}
+
+input[type="text"]:focus::-ms-input-placeholder,
+[type="email"]:focus::-ms-input-placeholder,
+[type="password"]:focus::-ms-input-placeholder {
+  position: relative;
+  color: #545454;
+  font-size: 0.8em;
+  transform: translateY(-25px);
+}
+
+input[type="text"]:focus::placeholder,
+[type="email"]:focus::placeholder,
+[type="password"]:focus::placeholder {
+  position: relative;
+  color: #545454;
+  font-size: 0.8em;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+input[type="text"]:focus ~ .focus-border,
+[type="email"]:focus ~ .focus-border,
+[type="password"]:focus ~ .focus-border {
+  width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  left: 0;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+::-moz-placeholder {
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.test div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.test div label {
+  cursor: pointer;
+  position: relative;
+}
+
+.test div label::after {
+  content: "";
+  position: absolute;
+  margin-left: 5px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.test div input[type="radio"]:checked + label::after {
+  background: #000000;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  border: 1px solid #000000;
+  padding: 15px 60px;
+  margin: 0;
+  text-decoration: none;
+  background: #ffffff;
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  font-size: 20px;
+}
+
+button[type="submit"]:hover {
+  background: #000000;
+  color: #ffffff;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./SAAS/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="form-wrapper">
+        <form
+          method="POST"
+          action="https://ampli-html-forms.herokuapp.com/data"
+        >
+          <fieldset>
+            <legend>
+              Stay In Touch
+            </legend>
+            <div class="inputs">
+              <div>
+                <input
+                  class="border-anim"
+                  type="text"
+                  name="username"
+                  placeholder="Username"
+                />
+                <span class="focus-border"></span>
+              </div>
+              <div>
+                <input
+                  class="border-anim"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+                <span class="focus-border"></span>
+              </div>
+              <div>
+                <input
+                  class="border-anim"
+                  type="password"
+                  name="secret"
+                  placeholder="Secret Code"
+                />
+                <span class="focus-border"></span>
+              </div>
+            </div>
+            <div class="test">
+              <h1>If you have a dog, what will you do first with him?</h1>
+              <div>
+                <input id="radio1" type="radio" name="test" value="eat" />
+                <label for="radio1">Eat</label>
+              </div>
+              <div>
+                <input id="radio2" type="radio" name="test" value="dh" />
+                <label for="radio2">I don't have a dog</label>
+              </div>
+              <div>
+                <input id="radio3" type="radio" name="test" value="dk" />
+                <label for="radio3">Difficult to answer</label>
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit" name="submit-button">Send</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

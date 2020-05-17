@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import "main-styles";
+
+//font-family: 'Raleway', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(180deg, rgba(45, 51, 59, 0.5), #000000 95%),
+    url(../img/gora.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  margin-top: 100px;
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 1%;
+}
+
+fieldset {
+  border: none;
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+legend {
+  display: table;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  div {
+    position: relative;
+  }
+}
+
+input[type="text"],
+[type="email"],
+[type="password"] {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  text-align: center;
+  padding-top: 30px;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+
+  ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: 0.4s;
+  }
+
+  &::placeholder {
+    transition: all 0.3s;
+    color: #bfbfbf;
+  }
+
+  &:focus {
+    &::placeholder {
+      position: relative;
+      color: #545454;
+      font-size: 0.8em;
+      transform: translateY(-25px);
+    }
+    ~ .focus-border {
+      width: 100%;
+      transition: 0.4s;
+      left: 0;
+    }
+  }
+}
+
+input[type="radio"] {
+  @extend .visually-hidden;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+::-moz-placeholder {
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+
+  div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    label {
+      cursor: pointer;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        margin-left: 5px;
+        border: 2px solid #000000;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        transition: background 0.3s;
+      }
+    }
+    input[type="radio"]:checked + label {
+      &::after {
+        background: #000000;
+      }
+    }
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  border: 1px solid #000000;
+  padding: 15px 60px;
+  margin: 0;
+  text-decoration: none;
+  background: #ffffff;
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s;
+  font-size: 20px;
+
+  &:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+}
