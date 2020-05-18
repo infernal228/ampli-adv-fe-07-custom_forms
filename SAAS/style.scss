@@ -196,3 +196,21 @@ button[type="submit"] {
     color: #ffffff;
   }
 }
+
+@include for-size(phone-only) {
+  .form-wrapper {
+    width: 300px;
+    margin-top: 80px;
+  }
+  fieldset {
+    width: 200px;
+  }
+  legend {
+    font-size: 30px;
+    top: -70px;
+  }
+  .test {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
