@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

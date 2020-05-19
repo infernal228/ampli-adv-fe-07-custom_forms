@@ -3,10 +3,6 @@
 
 //font-family: 'Raleway', sans-serif;
 
-* {
-  box-sizing: border-box;
-}
-
 html,
 body {
   padding: 0;
@@ -22,6 +18,7 @@ body {
     url(../img/gora.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   min-height: 100vh;
   justify-content: center;
@@ -194,11 +191,11 @@ button[type="submit"] {
     color: #ffffff;
   }
 }
-
 @include for-size(phone-only) {
   .form-wrapper {
     width: 300px;
-    margin-top: 80px;
+    position: absolute;
+    top: 20px;
   }
   fieldset {
     width: 200px;
@@ -215,5 +212,26 @@ button[type="submit"] {
       padding-top: 10px;
       padding-bottom: 10px;
     }
+  }
+}
+
+@include for-size(tablet-portrait-up) {
+  .form-wrapper {
+    position: absolute;
+    top: 150px;
+  }
+}
+
+@include for-size(tablet-landscape-up) {
+  .form-wrapper {
+    position: absolute;
+    top: 20px;
+  }
+}
+
+@include for-size(desktop-up) {
+  .form-wrapper {
+    width: 400px;
+    margin-top: 120px;
   }
 }
