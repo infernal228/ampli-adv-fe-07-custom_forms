@@ -17,7 +17,6 @@
 
 html,
 body {
-  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -318,22 +317,12 @@ button[type="submit"]:hover {
     font-size: 30px;
     top: -70px;
   }
-  input[type="text"],
-  [type="email"],
-  [type="password"] {
-    padding-top: 20px;
-  }
-  input[type="text"] ~ .focus-border,
-  [type="email"] ~ .focus-border,
-  [type="password"] ~ .focus-border {
-    bottom: 10px;
-  }
   .test {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  div {
-    padding-top: 9px;
-    padding-bottom: 9px;
+  .test div {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
